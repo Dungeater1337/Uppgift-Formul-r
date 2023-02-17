@@ -2,10 +2,21 @@ body{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: 
+    ". header ."
     ". form ."
     ;
     padding: 8px;
-    background-color: rgb(157, 240, 157)
+    background-color: rgb(44, 49, 44);
+    gap: 5px;
+}
+
+header{
+    grid-area: header;
+    text-align: center;
+}
+
+h1{
+    font-style: normal;
 }
 
 form{
@@ -14,4 +25,5 @@ form{
     border-style: solid;
     border-width: 1px;
     padding: 10px;
+    border-radius: 1em;
 }
